@@ -37,6 +37,7 @@ int main() {
 			case 3: return lhs.loses < rhs.loses;
 			case 4: return lhs.goals > rhs.goals;
 			case 5: return lhs.lostgoals < rhs.lostgoals;
+			case 6: break;
 			default: cout << "Incorrect input, try again";
 				break;
 			}
