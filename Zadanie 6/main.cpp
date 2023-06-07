@@ -40,6 +40,15 @@ int main() {
 
 	file.close(); 
 
+	ifstream file("dane.txt");
+
+	Student A;
+	while (file >> A) {
+		Students.push_back(A);
+
+	}
+
+	file.close();
 
 	cout << endl << count_if(Students.begin(), Students.end(), [](Student p){return (p.Year == 3);  });
 
