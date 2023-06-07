@@ -36,7 +36,7 @@ int main() {
 	for (p = Students.begin(); p != Students.end(); p++) {
 		cout << "Zapis studenta " << p->Name << " " << p->Surname << " do pliku" << endl;  
 		file << *p << endl;
-	}
+	};
 
 	file.close(); 
 
@@ -46,7 +46,7 @@ int main() {
 	while (file >> A) {
 		Students.push_back(A);
 
-	}
+	};
 
 	file.close();
 
