@@ -30,8 +30,14 @@ ostream& operator<<(ostream& output, Student& data) {  //koniecznie te referencj
 };
 
 istream& operator>>(istream& input, Student& data) {
-	cout << "Podaj nazwisko ";
-	input >> data.Surname;   //jak spacja to getline trzeba uzyc
+	cout << "Input name ";
+	input >> data.Name;
+	cout << "Input surname ";
+	input >> data.Surname;   
+	cout << "Input ID ";
+	input >> data.ID;
+	cout << "Input group ";
+	input >> data.Group;
 	cout << "Input year: ";
 	input >> data.Year;
 	return input;
